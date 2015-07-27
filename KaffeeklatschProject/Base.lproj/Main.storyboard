@@ -87,8 +87,8 @@ The Kaffeeklatsch, Inc.
 103 Jefferson Street
 Huntsville, AL 35801
 
-(256) 539-1636 Phone
-(256) 539-1630 Fax
+1-256-539-1636 Phone
+1-256-539-1630 Fax
 contact@kaffeeklatsch.com</string>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -223,7 +223,7 @@ contact@kaffeeklatsch.com</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">
+                                <string key="text">
 Shade Grown Coffee
 Shade grown coffee is coffee cultivated under a canopy of sun filtering shade trees. Shaded coffee farms are more ecologically sound with the shade trees providing natural fertilizer, mulch and a source of wood used for cooking, fuel and lumber. The shade trees provide a sanctuary for bird and animal life. Often the trees used for shading coffee offer another income producing crop such a citrus fruit and hardwood.
 
@@ -235,7 +235,7 @@ Fair Trade Certification guarantees that farmers and workers receive a fair pric
 
 Certified Organic Coffee
 Certified organic coffee is coffee that is produced without the use of synthetic fertilizers, pesticides or other agrochemicals. Certified organic coffees are reviewed by an independent certifying agency that inspects the coffee farm and monitors all the stages of production for adherence to sustainable agricultural techniques and ecologically sound practices. All coffee farm resources must test chemical-free for three consecutive years before they can be certified organic.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -270,8 +270,8 @@ Certified organic coffee is coffee that is produced without the use of synthetic
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">The Kaffeeklatsch Inc. first opened its doors to coffee lovers on May 17, 1976. Our business was patterned after the San Francisco coffee houses we visited while living in California.
-After a year of business, we decided to roast coffee beans ourselves, insuring absolute control over freshness and quality. We acquired a vintage 1929 Jabez Burns coffee roaster from New Orleans and began roasting for a growing number of satisfied customers. Since November 1977, we’ve enticed passersby with the aroma of our freshly roasted coffee.  Our Master Roaster, Grant Heath, has over 37 years of experience in roasting.  Grant and Kathy Heath sample all coffees and teas purchased by The Kaffeeklatsch, Inc. to make sure they are of the highest quality.  We strive to provide the best products with courteous and friendly service reflecting the values of a family business, locally owned and operated.  </mutableString>
+                                <string key="text">The Kaffeeklatsch Inc. first opened its doors to coffee lovers on May 17, 1976. Our business was patterned after the San Francisco coffee houses we visited while living in California.
+After a year of business, we decided to roast coffee beans ourselves, insuring absolute control over freshness and quality. We acquired a vintage 1929 Jabez Burns coffee roaster from New Orleans and began roasting for a growing number of satisfied customers. Since November 1977, we’ve enticed passersby with the aroma of our freshly roasted coffee.  Our Master Roaster, Grant Heath, has over 37 years of experience in roasting.  Grant and Kathy Heath sample all coffees and teas purchased by The Kaffeeklatsch, Inc. to make sure they are of the highest quality.  We strive to provide the best products with courteous and friendly service reflecting the values of a family business, locally owned and operated.  </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -295,13 +295,13 @@ After a year of business, we decided to roast coffee beans ourselves, insuring a
         <!--Contact-->
         <scene sceneID="Uf0-Xs-8BN">
             <objects>
-                <viewController id="rFU-es-13H" sceneMemberID="viewController">
+                <viewController id="rFU-es-13H" customClass="ContactViewController" customModule="KaffeeklatschProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KYb-MJ-MmU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" textAlignment="center" id="rxK-im-bwk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="467"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="491"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Retail Store Hours
@@ -319,8 +319,10 @@ Huntsville, AL 35801
 (256) 539-1630 Fax
 
 contact@kaffeeklatsch.com</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -342,8 +344,6 @@ contact@kaffeeklatsch.com</string>
         <!--Countries Of Origin-->
         <scene sceneID="rJi-uZ-SvR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JrZ-cj-D4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="N1n-xm-ypA" userLabel="Exit" sceneMemberID="exit"/>
                 <tableViewController id="OOz-aI-2wI" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" indicatorStyle="black" dataMode="static" style="plain" separatorStyle="default" rowHeight="51" sectionHeaderHeight="22" sectionFooterHeight="22" id="UFC-tl-GO5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -674,6 +674,8 @@ Good body, lively bright flavor with citrus notes and a pleasant slightly floral
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JrZ-cj-D4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="N1n-xm-ypA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="919" y="2848"/>
         </scene>
@@ -973,7 +975,7 @@ Dark, smoky flavor, full body without the caffeine. High quality African and Ind
                                         <rect key="frame" x="0.0" y="749" width="320" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X0U-P5-Vra" id="ChB-aO-mKe">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+                                            <rect key="frame" x="0.0" y="-1" width="320" height="1"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1130,11 +1132,12 @@ True coffee flavor, full body and rich flavor. Sumatra Mandheling’s flavors ar
         <!--Special Blends-->
         <scene sceneID="Te8-pq-sng">
             <objects>
-                <tableViewController id="Pjw-dd-nh2" sceneMemberID="viewController">
+                <tableViewController title="Special Blends" id="Pjw-dd-nh2" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aMB-Hr-xdF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.27791587750000002" green="0.005994469023" blue="0.1088922411" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="nr0-vj-Aw2">
                                 <cells>
@@ -1152,7 +1155,7 @@ True coffee flavor, full body and rich flavor. Sumatra Mandheling’s flavors ar
 Our blend of Colombian Supremo and French Roast is smooth and rich with great depth of character. Combining the fine flavor of Colombian and the bittersweet chocolate notes of French Roast, Breakfast Blend displays the subtleties of the arts of roasting and of blending.
 </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1347,5 +1350,5 @@ A blend from the birthplace of coffee; wild, berry-like Ethiopian Natural Yirgac
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <color key="tintColor" red="1" green="0.97607952310000001" blue="0.90605945759999995" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.058988365244488916" green="0.046579246511278427" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

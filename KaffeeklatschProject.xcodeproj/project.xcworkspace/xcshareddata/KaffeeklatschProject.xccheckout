@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>40C12C70-9C25-48C3-BBC1-B1ED285155B8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KaffeeklatschProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0550B9F921450FF10EC9B55CF03EEA07AAA6331A</key>
+		<string>github.com:Aidancs/KaffeeklatschIOSApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KaffeeklatschProject.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0550B9F921450FF10EC9B55CF03EEA07AAA6331A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Aidancs/KaffeeklatschIOSApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0550B9F921450FF10EC9B55CF03EEA07AAA6331A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0550B9F921450FF10EC9B55CF03EEA07AAA6331A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KaffeeklatschProject</string>
+		</dict>
+	</array>
+</dict>
+</plist>

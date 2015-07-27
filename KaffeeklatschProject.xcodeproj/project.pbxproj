@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0811C06F1B5DB302001DC344 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811C06E1B5DB302001DC344 /* HomeViewController.swift */; };
 		0811C0711B5DB339001DC344 /* SpecialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0811C0701B5DB339001DC344 /* SpecialsViewController.swift */; };
+		084F11811B66949E00A5FDC6 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084F11801B66949E00A5FDC6 /* ContactViewController.swift */; };
 		08830F061B5D5DAB000521EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08830F051B5D5DAB000521EE /* AppDelegate.swift */; };
 		08830F0B1B5D5DAB000521EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08830F091B5D5DAB000521EE /* Main.storyboard */; };
 		08830F0D1B5D5DAB000521EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08830F0C1B5D5DAB000521EE /* Images.xcassets */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0811C06E1B5DB302001DC344 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		0811C0701B5DB339001DC344 /* SpecialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialsViewController.swift; sourceTree = "<group>"; };
+		084F11801B66949E00A5FDC6 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		08830F001B5D5DAB000521EE /* KaffeeklatschProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaffeeklatschProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08830F041B5D5DAB000521EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08830F051B5D5DAB000521EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				08830F091B5D5DAB000521EE /* Main.storyboard */,
 				0811C0701B5DB339001DC344 /* SpecialsViewController.swift */,
 				0811C06E1B5DB302001DC344 /* HomeViewController.swift */,
+				084F11801B66949E00A5FDC6 /* ContactViewController.swift */,
 				08830F0C1B5D5DAB000521EE /* Images.xcassets */,
 				08830F0E1B5D5DAB000521EE /* LaunchScreen.xib */,
 				08830F031B5D5DAB000521EE /* Supporting Files */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08830F061B5D5DAB000521EE /* AppDelegate.swift in Sources */,
+				084F11811B66949E00A5FDC6 /* ContactViewController.swift in Sources */,
 				0811C06F1B5DB302001DC344 /* HomeViewController.swift in Sources */,
 				0811C0711B5DB339001DC344 /* SpecialsViewController.swift in Sources */,
 			);
