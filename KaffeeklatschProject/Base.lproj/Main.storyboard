@@ -4,12 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KaffeeklatschProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="KaffeeklatschProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -17,147 +16,1336 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  The Kaffeeklatsch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u8r-wV-h9r">
-                                        <rect key="frame" x="44" y="0.0" width="287" height="83"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="          The Kaffeeklatsch" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u8r-wV-h9r">
+                                        <rect key="frame" x="-7" y="0.0" width="410" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="backgroundColor" red="1" green="0.97607952314277402" blue="0.90605945757236861" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="34"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KK Logo2" id="Pir-e4-nri">
+                                        <rect key="frame" x="19" y="22" width="45" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NTk-7s-6iZ">
-                                <rect key="frame" x="11" y="98" width="46" height="30"/>
+                                <rect key="frame" x="26" y="98" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Home">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HUT-c5-Dvp">
-                                <rect key="frame" x="70" y="98" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Specials">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="I29-yZ-42U" kind="modal" id="30l-YP-izE"/>
+                                    <segue destination="w7V-8U-m8b" kind="unwind" unwindAction="cancelToViewController:" id="ae5-Ho-m88"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9EL-ad-koz">
-                                <rect key="frame" x="146" y="98" width="46" height="30"/>
+                                <rect key="frame" x="170" y="98" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Learn ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qLS-fo-vRm" kind="modal" id="Go1-ei-kl3"/>
+                                    <segue destination="Ljt-t0-JbQ" kind="modal" id="LhX-rk-bjp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lkA-sa-ejU">
+                                <rect key="frame" x="231" y="98" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DhK-Lg-3hD" kind="modal" id="V5f-uW-s6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HUT-c5-Dvp">
+                                <rect key="frame" x="91" y="98" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Specials">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2VG-U1-3nd" kind="modal" id="S0V-Pc-yY8"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" id="HVR-pO-npr">
+                                <rect key="frame" x="30" y="433" width="327" height="235"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Retail Store Hours
+
+Tuesday through Friday 9AM – 4PM
+Saturday 10AM – 3PM
+
+The Kaffeeklatsch, Inc.
+103 Jefferson Street
+Huntsville, AL 35801
+
+(256) 539-1636 Phone
+(256) 539-1630 Fax
+contact@kaffeeklatsch.com</string>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dfO-6b-JaU">
+                                <rect key="frame" x="123" y="150" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Countries Of Origin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="42R-ot-52O" kind="modal" id="1pR-6z-Rye"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xjo-OG-gHg">
+                                <rect key="frame" x="123" y="200" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dark Roasts">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BZP-y7-ibA" kind="modal" id="XHi-O8-ied"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gxw-6t-lzR">
+                                <rect key="frame" x="123" y="250" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Decaffeinated">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ISq-K2-lJs" kind="modal" id="osm-dw-KUK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ULR-Rb-Npr">
+                                <rect key="frame" x="123" y="300" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Special Blends">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ERL-Is-zhg" kind="modal" id="NRh-X0-5u0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SAM_4168" id="XIy-cF-gHa">
+                                <rect key="frame" x="66" y="338" width="250" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Tc-th-AXF">
+                                <rect key="frame" x="290" y="98" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Contact">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KAW-4x-SpS" kind="modal" id="Niz-b2-Nq1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.27791587752525249" green="0.0059944690234925999" blue="0.1088922410643776" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="blendButton" destination="ULR-Rb-Npr" id="3HP-7T-o2p"/>
+                        <outlet property="countryButton" destination="dfO-6b-JaU" id="aJJ-AL-BTc"/>
+                        <outlet property="darkRoastButton" destination="Xjo-OG-gHg" id="E4L-kV-KdO"/>
+                        <outlet property="decafButton" destination="gxw-6t-lzR" id="CHV-7o-JOM"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="w7V-8U-m8b" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="31" y="313"/>
+            <point key="canvasLocation" x="-28" y="4226"/>
         </scene>
         <!--Specials-->
-        <scene sceneID="Bi5-cX-UJE">
+        <scene sceneID="A5U-1c-GRK">
             <objects>
-                <tableViewController id="H2v-Ng-odg" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oee-dI-F2u">
+                <viewController id="Irw-On-8oo" customClass="SpecialsViewController" customModule="KaffeeklatschProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BXJ-Nl-KcS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" scrollEnabled="NO" editable="NO" text="Coffee Of The Month" textAlignment="center" id="PvE-xB-zeW">
+                                <rect key="frame" x="0.0" y="13" width="320" height="94"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" editable="NO" textAlignment="center" selectable="NO" id="LsE-ek-dIe">
+                                <rect key="frame" x="0.0" y="128" width="320" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Nicaragua Jinotega Colibri Azul SGH EP is sourced from family-owned farms organized around Asociación Aldea Global Jinotega (Aldea Global), an organization operating in the department of Jinotega, Nicaragua. Aldea Global has more than 500 members and 47 per cent are women, the result of investing revenues in gender equality programs focused on healthcare and small business lending. Our Nicaragua Jinotega is produced on farms surrounding the Cerro Datanlí – El Diablo cloud forest reserve that is home to more than 250 bird species, some in danger of extinction. The organization, Aldea Global, has invested in ecotourism and watershed protection projects as a way to preserve this natural resource.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" id="bMy-eq-Tdi">
-                            <rect key="frame" x="0.0" y="130" width="320" height="442"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <mutableString key="text">Nicaragua Jinotega Colibri Azul SGH EP is sourced from family-owned farms organized around Asociación Aldea Global Jinotega (Aldea Global), an organization operating in the department of Jinotega, Nicaragua. Aldea Global has more than 500 members and 47 per cent are women, the result of investing revenues in gender equality programs focused on healthcare and small business lending. Our Nicaragua Jinotega is produced on farms surrounding the Cerro Datanlí – El Diablo cloud forest reserve that is home to more than 250 bird species, some in danger of extinction. The organization, Aldea Global, has invested in ecotourism and watershed protection projects as a way to preserve this natural resource.</mutableString>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="H2v-Ng-odg" id="VGf-bM-CT3"/>
-                            <outlet property="delegate" destination="H2v-Ng-odg" id="cs6-QU-hG5"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Specials" id="weH-yh-vqV"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9TQ-Bu-3nP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="979" y="305"/>
-        </scene>
-        <!--Specials-->
-        <scene sceneID="Bes-wR-9LK">
-            <objects>
-                <navigationController title="Specials" automaticallyAdjustsScrollViewInsets="NO" id="I29-yZ-42U" sceneMemberID="viewController">
+                    </view>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DGA-U1-BQ6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="H2v-Ng-odg" kind="relationship" relationship="rootViewController" id="BMT-FO-6gh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3rT-nb-4mR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <navigationItem key="navigationItem" title="Specials" id="XLX-yV-u8I">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="3O7-I8-3Cs">
+                            <color key="tintColor" red="0.04014291373" green="0.1028715414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ZIE-NZ-iIm" kind="unwind" unwindAction="cancelToViewController:" id="g6e-dT-ANe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7r-qI-4HH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZIE-NZ-iIm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="426" y="305"/>
+            <point key="canvasLocation" x="919" y="313"/>
         </scene>
         <!--Learn About Coffee-->
-        <scene sceneID="9Gr-WH-NV9">
+        <scene sceneID="qcS-O4-uxX">
             <objects>
-                <tableViewController id="qMm-ZL-WJn" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YG5-xF-JxM">
+                <viewController id="pcH-h3-KAR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5n1-hS-G47">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" editable="NO" textAlignment="center" id="Xg7-il-afV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">
+Shade Grown Coffee
+Shade grown coffee is coffee cultivated under a canopy of sun filtering shade trees. Shaded coffee farms are more ecologically sound with the shade trees providing natural fertilizer, mulch and a source of wood used for cooking, fuel and lumber. The shade trees provide a sanctuary for bird and animal life. Often the trees used for shading coffee offer another income producing crop such a citrus fruit and hardwood.
+
+Hand Crafted Coffee
+The Kaffeeklatsch is a true “hand crafted” roaster of coffees. Coffee roasting is an art as well as a science and requires years of experience. We do not rely on automation to determine optimum roast spectrums. Our master roaster, Grant Heath, who has been roasting specialty coffee for over 36 years, tends to each and every batch. Coffee is a volatile, natural food product. Each variety of coffee has its ideal roasting time and temperature. However, different batches can be unpredictable with external temperature, relative humidity and many other factors contributing to how a particular roast behaves. Only a master roaster can make the subtle adjustments required during the roasting process. Roasting small batches of coffee on the premises allows the Kaffeeklatsch absolute control over bean quality and freshness.
+
+Fair Trade Coffee
+Fair Trade Certification guarantees that farmers and workers receive a fair price for the coffees that they produce. The Fair Trade price means that farmers can better provide for their families and that their children can go to school instead of working in the fields. These farmers can avoid cost-cutting practices that compromise quality. Producers are also encouraged to work towards organic production through price incentives.
+
+Certified Organic Coffee
+Certified organic coffee is coffee that is produced without the use of synthetic fertilizers, pesticides or other agrochemicals. Certified organic coffees are reviewed by an independent certifying agency that inspects the coffee farm and monitors all the stages of production for adherence to sustainable agricultural techniques and ecologically sound practices. All coffee farm resources must test chemical-free for three consecutive years before they can be certified organic.
+</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Learn About Coffee" id="yle-v6-M5k">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="0GN-aW-ReC">
+                            <color key="tintColor" red="0.04014291373" green="0.1028715414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="bsw-bc-GrF" kind="unwind" unwindAction="cancelToViewController:" id="XGB-5o-PAU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7B-4N-Va7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bsw-bc-GrF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="943"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="oSs-kX-KSm">
+            <objects>
+                <viewController id="DQZ-37-kLD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cry-Lo-wah">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" id="6K5-i1-3O6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The Kaffeeklatsch Inc. first opened its doors to coffee lovers on May 17, 1976. Our business was patterned after the San Francisco coffee houses we visited while living in California.
+After a year of business, we decided to roast coffee beans ourselves, insuring absolute control over freshness and quality. We acquired a vintage 1929 Jabez Burns coffee roaster from New Orleans and began roasting for a growing number of satisfied customers. Since November 1977, we’ve enticed passersby with the aroma of our freshly roasted coffee.  Our Master Roaster, Grant Heath, has over 37 years of experience in roasting.  Grant and Kathy Heath sample all coffees and teas purchased by The Kaffeeklatsch, Inc. to make sure they are of the highest quality.  We strive to provide the best products with courteous and friendly service reflecting the values of a family business, locally owned and operated.  </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Us" id="5Az-5g-fTi">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="onS-m5-KPJ">
+                            <color key="tintColor" red="0.04014291373" green="0.1028715414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="1rE-Tf-1tY" kind="unwind" unwindAction="cancelToViewController:" id="mP3-tC-aR9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2P-vK-ZgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1rE-Tf-1tY" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="1563"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="Uf0-Xs-8BN">
+            <objects>
+                <viewController id="rFU-es-13H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KYb-MJ-MmU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" textAlignment="center" id="rxK-im-bwk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="467"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Retail Store Hours
+
+Tuesday through Friday 9AM – 4PM
+Saturday 10AM – 3PM
+
+
+The Kaffeeklatsch, Inc.
+103 Jefferson Street
+Huntsville, AL 35801
+
+(256) 539-1636 Phone
+
+(256) 539-1630 Fax
+
+contact@kaffeeklatsch.com</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact" id="afB-rO-rPN">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="mqn-vZ-MiB">
+                            <color key="tintColor" red="0.04014291373" green="0.1028715414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Gst-sw-3ZI" kind="unwind" unwindAction="cancelToViewController:" id="Ip8-pD-0g6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CW6-QC-Jqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Gst-sw-3ZI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="2237"/>
+        </scene>
+        <!--Countries Of Origin-->
+        <scene sceneID="rJi-uZ-SvR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JrZ-cj-D4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="N1n-xm-ypA" userLabel="Exit" sceneMemberID="exit"/>
+                <tableViewController id="OOz-aI-2wI" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" indicatorStyle="black" dataMode="static" style="plain" separatorStyle="default" rowHeight="51" sectionHeaderHeight="22" sectionFooterHeight="22" id="UFC-tl-GO5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6e5-S5-hZf">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6e5-S5-hZf" id="e7l-J4-vAV">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <sections>
+                            <tableViewSection id="qpI-YQ-DhX">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="JCm-oq-x6c" rowHeight="147" style="IBUITableViewCellStyleDefault" id="azU-s8-Nig">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="147"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="azU-s8-Nig" id="pYa-kk-TP1">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JCm-oq-x6c">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Brazil Estancia Lecy RFA $14.45 lb.
+
+Our Brazil Estancia Lecy has a sweet, floral aroma with hints of tropical fruit. It has a light body and delicate acidity with a luscious nutty flavor and a long chocolaty finish.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="A5x-ux-N46" rowHeight="244" style="IBUITableViewCellStyleDefault" id="Lnv-Yh-mu0">
+                                        <rect key="frame" x="0.0" y="211" width="320" height="244"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lnv-Yh-mu0" id="ueT-FN-aFC">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="243"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A5x-ux-N46">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Celebes Kalossi (Sulawesi) Toarco Jaya AA Fully Washed $18.95 lb.
+
+Our Celebes (Sulawesi) has hazelnut, honey and dark chocolate undertones balanced by a sweetly pungent fruit and white wine flavor. Our Sulawesi Toarco Jaya AA coffee from the Toraja region of Celebes Islands, now known as Sulawesi, exhibits a complex character with several layers of overlapping flavor.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="wh9-RR-goF" rowHeight="224" style="IBUITableViewCellStyleDefault" id="h4S-hg-5ir">
+                                        <rect key="frame" x="0.0" y="455" width="320" height="224"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h4S-hg-5ir" id="LXs-SL-6BQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wh9-RR-goF">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Colombia Narino Supremo $15.50 lb.
+
+Our Colombia Narino Supremo is a beautiful coffee with a sweet, fig-like aroma and fine flavor with notes of cane sugar, citrus fruit and cocoa. Colombia Narino Supremo is hand-picked by workers at small family-owned farms who take great pride in their production, preparation and grading of each coffee.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="3iz-6L-44B" rowHeight="189" style="IBUITableViewCellStyleDefault" id="GCv-Gp-MsV">
+                                        <rect key="frame" x="0.0" y="679" width="320" height="189"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GCv-Gp-MsV" id="7mp-YA-BPJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3iz-6L-44B">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Costa Rica La Minita 2014 $17.75 lb.
+
+Elegant, refined and complex. This internationally known single-estate coffee is the best crop we have tasted in years with its bright acidity, medium body and sweet flavors of citrus, caramelized sugar and fine chocolate. A veritable symphony of flavors!</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="A4I-hO-cMn" rowHeight="154" style="IBUITableViewCellStyleDefault" id="Puw-eE-XQt">
+                                        <rect key="frame" x="0.0" y="868" width="320" height="154"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Puw-eE-XQt" id="lAX-mE-Tf9">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A4I-hO-cMn">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Ethiopian Harrar -- Queen City $16.95 lb.
+
+A classic Ethiopian Harrar, smooth and refined with fruity, wine-like notes and a hint of semisweet chocolate. The finest "mocha-style" coffee in the world today.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="abL-Jm-kfq" rowHeight="222" style="IBUITableViewCellStyleDefault" id="aHQ-uk-91o">
+                                        <rect key="frame" x="0.0" y="1022" width="320" height="222"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aHQ-uk-91o" id="ftg-eJ-8ur">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="221"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="abL-Jm-kfq">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Ethiopian Natural Yirgacheffe -- Aricha $17.95 lb.
+
+Our natural-processed Ethiopian Yirgacheffe coffee is bursting with wild and sweet fruit flavors, like a bowl of blueberries. Coffee of the Arabica variety was discovered growing over 1000 years ago in Ethiopia where stands of coffee remain unpicked due to inaccessibility.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="HkF-cU-fLQ" rowHeight="168" style="IBUITableViewCellStyleDefault" id="cf3-We-7Gp">
+                                        <rect key="frame" x="0.0" y="1244" width="320" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cf3-We-7Gp" id="3Yb-eF-sqh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HkF-cU-fLQ">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Guatemala Palo Alto Azul $15.45 lb.
+
+Grown by old traditional methods to ensure quality, this fine Guatemalan coffee has a smoky, nutty aroma. The pleasant acidity and notes of stone fruits are balanced by good creamy body.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ztR-02-U83" rowHeight="157" style="IBUITableViewCellStyleDefault" id="YKn-ix-hpK">
+                                        <rect key="frame" x="0.0" y="1412" width="320" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YKn-ix-hpK" id="t7g-d3-xv0">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ztR-02-U83">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Hawaiian Kona $49.95 lb.
+
+Exotic, smooth body, complex with notes of fruit, bittersweet chocolate and caramel. One of the most highly prized coffees in the world. Hawaii is the only place in the United States where coffee is grown.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="WJy-MW-abv" rowHeight="217" style="IBUITableViewCellStyleDefault" id="LM1-My-MkC">
+                                        <rect key="frame" x="0.0" y="1569" width="320" height="217"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LM1-My-MkC" id="dB2-Kh-Bwn">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WJy-MW-abv">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Honduras Santa Elena Victor Ventura $15.95 lb.
+
+Our Honduran coffee is a single-estate, micro-lot coffee produced by Victor Ventura in Santa Elena, La Paz, Honduras. It has a fruity aroma and hints of sweet caramel. The flavor is lush and well-balanced with notes of vanilla and apricot and a nuance of dark chocolate.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="CvW-Fe-Ua0" rowHeight="229" style="IBUITableViewCellStyleDefault" id="0Sr-W0-yHp">
+                                        <rect key="frame" x="0.0" y="1786" width="320" height="229"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Sr-W0-yHp" id="0Zt-Hc-q3S">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="228"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CvW-Fe-Ua0">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Kenya Kirinyaga Kiunya AA from $17.50 lb.
+
+The Kenya Kiunya brewed cup is very refined and well-balanced. The aroma shows caramel and a subtle dried fruit sweetness. Its fine maple-syrupy mouthfeel and fruity sweetness are a great backdrop to the delicate lemon-like bright notes. Intense pink grapefruit finish.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="JdZ-TV-XFk" rowHeight="171" style="IBUITableViewCellStyleDefault" id="G2D-Vp-nyN">
+                                        <rect key="frame" x="0.0" y="2015" width="320" height="171"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G2D-Vp-nyN" id="RG4-9K-s2O">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JdZ-TV-XFk">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Mexican Oaxaca CEPCO Organic $14.95 lb.
+
+Our Mexican Oaxaca CEPCO is a Certified Organic and Fair Trade coffee -- silky smooth, luscious and soft drinking. The cooperative, CEPCO, is in the Mexican state of Oaxaca.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="FVY-ex-2Md" rowHeight="136" style="IBUITableViewCellStyleDefault" id="J1R-03-Zwm">
+                                        <rect key="frame" x="0.0" y="2186" width="320" height="136"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J1R-03-Zwm" id="dEo-Z8-4KQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FVY-ex-2Md">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Nicaragua Jinotega SHB $13.95 lb.
+
+The Nicaragua Jinotega has a clear, clean focused cup with medium body and a floral, lemony finish. Complex, elegant and refined.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="kRG-mO-5S5" rowHeight="206" style="IBUITableViewCellStyleDefault" id="cSR-zE-aLf">
+                                        <rect key="frame" x="0.0" y="2322" width="320" height="206"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cSR-zE-aLf" id="mti-UX-5kb">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="205"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kRG-mO-5S5">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Panama Chiriqui Berlina Estate $15.95 lb.
+
+Our Panama Chiriquí Berlina Estate shows fruit, chocolate, caramel and spice in the aroma. The flavor is well balanced and has cherry and chocolate notes. An elegant, well-focused coffee, our Panama Chiriquí Berlina Estate provides a symphony of flavors.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="RiO-ea-Mwk" rowHeight="259" style="IBUITableViewCellStyleDefault" id="ISH-am-VRv">
+                                        <rect key="frame" x="0.0" y="2528" width="320" height="259"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ISH-am-VRv" id="CQ8-nS-PT8">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RiO-ea-Mwk">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Peruvian Organic Fair Trade Norandino $14.75 lb.
+
+Good balance with hints of citrus up front, excellent body, and a smooth creamy finish with notes of chocolate. In the cloud forest of the Andes — the ancient land of the Incas — coffee is grown much has it has been for generations … with great care, and with great respect for the land. Fair Trade and Organic</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="hjV-86-INt" rowHeight="156" style="IBUITableViewCellStyleDefault" id="uZh-Ya-iMX">
+                                        <rect key="frame" x="0.0" y="2787" width="320" height="156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uZh-Ya-iMX" id="PkL-vz-n5B">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hjV-86-INt">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Sumatra Organic Ketiara Adsenia Triple Pick $15.45 lb.
+
+Our Sumatra Ketiara has a magnificent heavy body with an earthy quality. Its character is sturdy and direct, and the flavor shows hints of spice, molasses and dark chocolate.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="KNx-3V-CYJ" rowHeight="137" style="IBUITableViewCellStyleDefault" id="53z-mg-srV">
+                                        <rect key="frame" x="0.0" y="2943" width="320" height="137"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="53z-mg-srV" id="XPx-5H-V70">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KNx-3V-CYJ">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Tanzanian Ruvuma Peaberry $14.95 lb.
+
+Good body, lively bright flavor with citrus notes and a pleasant slightly floral aroma. Our current stock of Tanzanian coffee is Ruvuma Peaberry.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
-                            <outlet property="dataSource" destination="qMm-ZL-WJn" id="2HY-vI-k8O"/>
-                            <outlet property="delegate" destination="qMm-ZL-WJn" id="4SE-ca-Maq"/>
+                            <outlet property="dataSource" destination="OOz-aI-2wI" id="yp4-Z8-fg7"/>
+                            <outlet property="delegate" destination="OOz-aI-2wI" id="mj2-dG-tBX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Learn About Coffee" id="q4x-tp-pLt"/>
+                    <navigationItem key="navigationItem" title="Countries Of Origin" id="lg9-2g-8lJ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="o1N-Xw-FdW">
+                            <color key="tintColor" red="0.04014291373" green="0.1028715414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="N1n-xm-ypA" kind="unwind" unwindAction="cancelToViewController:" id="2PS-60-WqY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IaZ-OM-cwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="979" y="917"/>
+            <point key="canvasLocation" x="919" y="2848"/>
         </scene>
-        <!--Learn-->
-        <scene sceneID="zhE-sy-SYA">
+        <!--Dark Roasts-->
+        <scene sceneID="eF6-ex-ogH">
             <objects>
-                <navigationController title="Learn" automaticallyAdjustsScrollViewInsets="NO" id="qLS-fo-vRm" sceneMemberID="viewController">
+                <tableViewController title="Dark Roasts" id="rmi-If-ObX" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RfE-fb-LUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="c9b-9x-oqs">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" textLabel="FzU-mo-da0" rowHeight="142" style="IBUITableViewCellStyleDefault" id="Oks-bQ-t5y">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="142"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oks-bQ-t5y" id="Yb8-0y-fiu">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FzU-mo-da0">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">French Roast $14.75 lb.
+
+Soft, rich, dark flavor; smooth and complex. We blend excellent grades of South and Central American coffees to create our French Roast.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="lgl-QC-Knf" rowHeight="125" style="IBUITableViewCellStyleDefault" id="joL-Wz-6Ms">
+                                        <rect key="frame" x="0.0" y="206" width="320" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="joL-Wz-6Ms" id="2Mw-3U-Yef">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lgl-QC-Knf">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Italian Roast $15.45 lb.
+
+Our darkest roast. Very intense, ebony coffee with pronounced smoky overtones. Italian Roast is our darkest roast.</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pTd-hU-dh3" rowHeight="144" style="IBUITableViewCellStyleDefault" id="Nw2-Tx-1RW">
+                                        <rect key="frame" x="0.0" y="331" width="320" height="144"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nw2-Tx-1RW" id="NYS-U5-Aqm">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pTd-hU-dh3">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Kaffeeklatsch Dark House Blend $15.45 lb.
+Rich, full-bodied, complex, with dark chocolate nuances. This roast is slightly lighter than our Italian Roast but the results are pronounced.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="rmi-If-ObX" id="oz5-T2-IkH"/>
+                            <outlet property="delegate" destination="rmi-If-ObX" id="BKb-k7-neC"/>
+                        </connections>
+                    </tableView>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Wi-gV-AVx">
+                    <navigationItem key="navigationItem" title="Dark Roasts" id="6jn-Ql-m0e">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="cLu-6M-v9C">
+                            <color key="tintColor" red="0.04014291373" green="0.1028715414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="hbF-7B-8Uo" kind="unwind" unwindAction="cancelToViewController:" id="X0N-BE-Jkc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFS-t0-36K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hbF-7B-8Uo" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="3486"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3ev-HU-R5n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2VG-U1-3nd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dHd-F6-2lX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="qMm-ZL-WJn" kind="relationship" relationship="rootViewController" id="TMJ-fx-mJx"/>
+                        <segue destination="Irw-On-8oo" kind="relationship" relationship="rootViewController" id="TGG-M2-t03"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="onW-Zx-WXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hV3-31-y5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="426" y="917"/>
+            <point key="canvasLocation" x="486" y="313"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S7l-Wp-Lqy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ljt-t0-JbQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u8s-Xm-CgT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pcH-h3-KAR" kind="relationship" relationship="rootViewController" id="ZnU-c4-qex"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7K5-it-lUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="943"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uqb-dU-HOc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DhK-Lg-3hD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eNC-9M-2Mx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DQZ-37-kLD" kind="relationship" relationship="rootViewController" id="UHB-aq-yD9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOa-f5-ikY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="1571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z3u-fd-NqX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KAW-4x-SpS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zch-5O-421">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rFU-es-13H" kind="relationship" relationship="rootViewController" id="EMb-li-s5z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zm-8h-wS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="2206"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aYA-CA-eCc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="42R-ot-52O" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Chf-bD-Gq8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OOz-aI-2wI" kind="relationship" relationship="rootViewController" id="0gg-bH-4EH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xgT-uc-0aH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="2848"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xaq-Oh-MRY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BZP-y7-ibA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uf2-JO-hAF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rmi-If-ObX" kind="relationship" relationship="rootViewController" id="sM7-nJ-fIh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49x-lH-e2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="3486"/>
+        </scene>
+        <!--Decaffeinated-->
+        <scene sceneID="MtJ-k7-vrp">
+            <objects>
+                <tableViewController title="Decaffeinated" id="e1o-fS-Hob" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r2A-bh-KUS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="T9B-RL-fga">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="yXU-8F-kVp" rowHeight="193" style="IBUITableViewCellStyleDefault" id="GbM-cU-jUq">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="193"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GbM-cU-jUq" id="URo-sN-hNy">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yXU-8F-kVp">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Decaffeinated Breakfast Blend $16.50 lb.
+
+Hearty and rich, a decaffeinated version of our Breakfast Blend. This full-bodied blend of Decaffeinated Colombian and Decaffeinated French Roast is so delicious one can hardly tell that it is “not the real thing”.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="xib-3a-8Uc" rowHeight="158" style="IBUITableViewCellStyleDefault" id="wTf-7J-nKr">
+                                        <rect key="frame" x="0.0" y="257" width="320" height="158"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTf-7J-nKr" id="c6h-vN-E3U">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xib-3a-8Uc">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Decaffeinated Colombian Supremo $15.95 lb.
+
+Mild, smooth flavor with medium-body. Coffee beans are decaffeinated prior to roasting and must be 97% caffeine free to be classified as decaf.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pvA-dg-eTw" rowHeight="155" style="IBUITableViewCellStyleDefault" id="BU5-Vv-rWn">
+                                        <rect key="frame" x="0.0" y="415" width="320" height="155"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BU5-Vv-rWn" id="ONX-cM-AXw">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pvA-dg-eTw">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Decaffeinated Ethiopian $15.45 lb.
+
+Pungent aroma, tangy flavor, medium-body. Our Decaffeinated Ethiopian is from the Sidamo region and reflects the quality that this famous coffee growing state is known for.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="OJu-9w-dtf" rowHeight="179" style="IBUITableViewCellStyleDefault" id="jle-wP-IhL">
+                                        <rect key="frame" x="0.0" y="570" width="320" height="179"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jle-wP-IhL" id="I0d-28-epT">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OJu-9w-dtf">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Decaffeinated French Roast $16.95 lb.
+
+Dark, smoky flavor, full body without the caffeine. High quality African and Indonesian beans are roasted a little longer that our other decaffeinated coffees to develop the characteristic dark, rich flavor of French Roast.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="0.0" id="X0U-P5-Vra">
+                                        <rect key="frame" x="0.0" y="749" width="320" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X0U-P5-Vra" id="ChB-aO-mKe">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="BXN-7e-ocl" rowHeight="195" style="IBUITableViewCellStyleDefault" id="wxb-rn-d4J">
+                                        <rect key="frame" x="0.0" y="749" width="320" height="195"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wxb-rn-d4J" id="zZ8-de-kHD">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BXN-7e-ocl">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Decaffeinated German Blend $15.95 lb.
+
+A Decaffeinated version of our popular German Blend. Inspired by the traditional combination of the best grades of Central American, South American and African coffees, we developed this blend to suit our European customers.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Udw-8k-tcL" rowHeight="241" style="IBUITableViewCellStyleDefault" id="GSg-ck-2VW">
+                                        <rect key="frame" x="0.0" y="944" width="320" height="241"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GSg-ck-2VW" id="Yb6-hp-N8E">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Udw-8k-tcL">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Decaffeinated Kaffeeklatsch House Blend $15.95 lb.
+
+Smooth and complex, a decaffeinated version of our Kaffeeklatsch House Blend. This well rounded blend of Decaffeinated Colombian, Decaffeinated Guatemalan, Decaffeinated Ethiopian and Decaffeinated Sumatran is so delicious one can hardly tell that it is “not the real thing”.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="t46-3p-5i5" rowHeight="176" style="IBUITableViewCellStyleDefault" id="xHW-0W-0D9">
+                                        <rect key="frame" x="0.0" y="1185" width="320" height="176"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xHW-0W-0D9" id="qMs-ZL-x7H">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t46-3p-5i5">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Decaffeinated Mocha/Java $16.75 lb.
+
+Blend of Decaf Ethiopian and Decaf Sumatra Mandheling, complex and full-bodied. Our decaffeinated version of the classic blend of Mocha style coffee from Ethiopia and Indonesian coffee is rich and flavorful.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="of2-CO-TyS" rowHeight="180" style="IBUITableViewCellStyleDefault" id="WIS-7J-5Cd">
+                                        <rect key="frame" x="0.0" y="1361" width="320" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WIS-7J-5Cd" id="avF-br-wqB">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="of2-CO-TyS">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Decaffeinated Peruvian Organic $15.45 lb.
+
+Mild flavor, good acidity, excellent body. Grown high in the Andean mountains at altitudes ranging from 3,000 to 5,000 feet, our Peruvian coffee is certified organic.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="LXh-MN-xij" rowHeight="161" style="IBUITableViewCellStyleDefault" id="MnM-va-8qQ">
+                                        <rect key="frame" x="0.0" y="1541" width="320" height="161"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MnM-va-8qQ" id="eWQ-xk-P6r">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LXh-MN-xij">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Decaffeinated Sumatra Mandheling $17.95 lb.
+
+True coffee flavor, full body and rich flavor. Sumatra Mandheling’s flavors are so deep and complex that they withstand better than any other coffee the slight flavor loss that decaffeination causes.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="EnK-1d-dKE">
+                                        <rect key="frame" x="0.0" y="1702" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EnK-1d-dKE" id="6H5-Fc-aRP">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="e1o-fS-Hob" id="SKi-Vt-KI0"/>
+                            <outlet property="delegate" destination="e1o-fS-Hob" id="eis-5M-xly"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Decaffeinated" id="wNq-98-H6f">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="wVa-F2-Sfa">
+                            <color key="tintColor" red="0.04014291373" green="0.1028715414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="LLW-Ot-30n" kind="unwind" unwindAction="cancelToViewController:" id="PA5-hp-x15"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7U3-RS-met" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="LLW-Ot-30n" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="4132"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cgD-JZ-By3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ISq-K2-lJs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vpl-gh-cgK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e1o-fS-Hob" kind="relationship" relationship="rootViewController" id="qEp-NX-w7j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GtA-ZW-xHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="4132"/>
+        </scene>
+        <!--Special Blends-->
+        <scene sceneID="Te8-pq-sng">
+            <objects>
+                <tableViewController id="Pjw-dd-nh2" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aMB-Hr-xdF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="nr0-vj-Aw2">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="dVt-o1-Ji5" rowHeight="211" style="IBUITableViewCellStyleDefault" id="8CX-R7-JIg">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="211"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8CX-R7-JIg" id="1Oi-Fb-t6b">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dVt-o1-Ji5">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Breakfast Blend $15.25 lb.
+
+Our blend of Colombian Supremo and French Roast is smooth and rich with great depth of character. Combining the fine flavor of Colombian and the bittersweet chocolate notes of French Roast, Breakfast Blend displays the subtleties of the arts of roasting and of blending.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="29X-63-eEo" rowHeight="193" style="IBUITableViewCellStyleDefault" id="BPA-bs-b52">
+                                        <rect key="frame" x="0.0" y="275" width="320" height="193"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BPA-bs-b52" id="Fdu-Gm-9da">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="29X-63-eEo">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Coffee Lovers' Blend $28.75 lb.
+
+Hawaiian Kona, Celebes Kalossi and Ethiopian Harrar combine for exquisite aroma, exceptional flavor and great body. We blended the some of the rarest coffees in the world for a coffee that seduces the true coffee connoisseur.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="JZQ-oa-8Sb" rowHeight="176" style="IBUITableViewCellStyleDefault" id="MM3-29-1oS">
+                                        <rect key="frame" x="0.0" y="468" width="320" height="176"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MM3-29-1oS" id="MCc-k9-FRW">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JZQ-oa-8Sb">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">German Blend $16.45 lb.
+
+Guatemalan Antigua, Colombia Supremo and Plantation Kenya AA, smooth and rich with good acidity. The Germans are famous for their coffeehouses and the excellent blends that they create.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="kKX-Wk-R4K" rowHeight="99" style="IBUITableViewCellStyleDefault" id="m09-4E-xIN">
+                                        <rect key="frame" x="0.0" y="644" width="320" height="99"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m09-4E-xIN" id="YgJ-iW-29v">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kKX-Wk-R4K">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Harvest Blend $14.95 lb.
+
+Delightfully creamy and smooth, hint of sweetness
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="dQa-d1-WT7" rowHeight="160" style="IBUITableViewCellStyleDefault" id="fVd-EU-Grb">
+                                        <rect key="frame" x="0.0" y="743" width="320" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fVd-EU-Grb" id="fJt-yE-zTk">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dQa-d1-WT7">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Holiday Blend $15.45 lb.
+
+Our fabulous blend of a South and Central American has fruity aroma, caramel-like body and a chocolate finish. Sure to please the most discriminating coffee drinkers.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="g5c-YQ-NEv" rowHeight="159" style="IBUITableViewCellStyleDefault" id="NkJ-9e-z3q">
+                                        <rect key="frame" x="0.0" y="903" width="320" height="159"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NkJ-9e-z3q" id="N1P-0C-91H">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g5c-YQ-NEv">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Kaffeeklatsch House Blend $14.45 lb.
+
+Medium-bodied, well balanced, pleasant flavor. The lively, complex flavors of Central and South American coffees make our House Blend a real crowd pleaser.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="xlc-hp-H3Y" rowHeight="122" style="IBUITableViewCellStyleDefault" id="pFG-93-TKs">
+                                        <rect key="frame" x="0.0" y="1062" width="320" height="122"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pFG-93-TKs" id="NgI-6I-VKk">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xlc-hp-H3Y">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Mocha/Java $16.50 lb.
+
+The world’s oldest and most famous blend, rich, full-bodied, striking flavor.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="7pq-MK-Nqy" rowHeight="151" style="IBUITableViewCellStyleDefault" id="BpQ-Hh-VWW">
+                                        <rect key="frame" x="0.0" y="1184" width="320" height="151"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BpQ-Hh-VWW" id="cIn-DC-24F">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7pq-MK-Nqy">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <string key="text">Red Sea Blend $17.45 lb.
+
+A blend from the birthplace of coffee; wild, berry-like Ethiopian Natural Yirgacheffe combined with refined Ethiopian Harrar to produce a fantastic, aromatic coffee.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Pjw-dd-nh2" id="4XX-T4-js0"/>
+                            <outlet property="delegate" destination="Pjw-dd-nh2" id="vI4-lZ-30o"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Special Blends" id="1MB-UE-msw">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="KcI-Sb-GQM">
+                            <color key="tintColor" red="0.040142913730247032" green="0.10287154138285748" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="hYG-7l-Laq" kind="unwind" unwindAction="cancelToViewController:" id="4zf-ub-UqA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQp-2b-fK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hYG-7l-Laq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="4756"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hGA-wX-KHf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ERL-Is-zhg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LBb-LN-v79">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pjw-dd-nh2" kind="relationship" relationship="rootViewController" id="VV4-wo-Tt0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tjs-zf-n4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="4756"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="KK Logo2" width="1935" height="1935"/>
+        <image name="SAM_4168" width="3264" height="2448"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" red="1" green="0.97607952310000001" blue="0.90605945759999995" alpha="1" colorSpace="calibratedRGB"/>
 </document>
