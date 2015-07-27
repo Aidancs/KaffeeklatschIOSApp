@@ -314,9 +314,9 @@ The Kaffeeklatsch, Inc.
 103 Jefferson Street
 Huntsville, AL 35801
 
-(256) 539-1636 Phone
+1-256-539-1636 Phone
 
-(256) 539-1630 Fax
+1-256-539-1630 Fax
 
 contact@kaffeeklatsch.com</string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -353,7 +353,7 @@ contact@kaffeeklatsch.com</string>
                             <tableViewSection id="qpI-YQ-DhX">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="JCm-oq-x6c" rowHeight="147" style="IBUITableViewCellStyleDefault" id="azU-s8-Nig">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="147"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="147"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="azU-s8-Nig" id="pYa-kk-TP1">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="146"/>
@@ -372,7 +372,7 @@ Our Brazil Estancia Lecy has a sweet, floral aroma with hints of tropical fruit.
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="A5x-ux-N46" rowHeight="244" style="IBUITableViewCellStyleDefault" id="Lnv-Yh-mu0">
-                                        <rect key="frame" x="0.0" y="211" width="320" height="244"/>
+                                        <rect key="frame" x="0.0" y="147" width="320" height="244"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lnv-Yh-mu0" id="ueT-FN-aFC">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="243"/>
@@ -391,7 +391,7 @@ Our Celebes (Sulawesi) has hazelnut, honey and dark chocolate undertones balance
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="wh9-RR-goF" rowHeight="224" style="IBUITableViewCellStyleDefault" id="h4S-hg-5ir">
-                                        <rect key="frame" x="0.0" y="455" width="320" height="224"/>
+                                        <rect key="frame" x="0.0" y="391" width="320" height="224"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h4S-hg-5ir" id="LXs-SL-6BQ">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
@@ -410,7 +410,7 @@ Our Colombia Narino Supremo is a beautiful coffee with a sweet, fig-like aroma a
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="3iz-6L-44B" rowHeight="189" style="IBUITableViewCellStyleDefault" id="GCv-Gp-MsV">
-                                        <rect key="frame" x="0.0" y="679" width="320" height="189"/>
+                                        <rect key="frame" x="0.0" y="615" width="320" height="189"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GCv-Gp-MsV" id="7mp-YA-BPJ">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
@@ -429,7 +429,7 @@ Elegant, refined and complex. This internationally known single-estate coffee is
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="A4I-hO-cMn" rowHeight="154" style="IBUITableViewCellStyleDefault" id="Puw-eE-XQt">
-                                        <rect key="frame" x="0.0" y="868" width="320" height="154"/>
+                                        <rect key="frame" x="0.0" y="804" width="320" height="154"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Puw-eE-XQt" id="lAX-mE-Tf9">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
@@ -448,7 +448,7 @@ A classic Ethiopian Harrar, smooth and refined with fruity, wine-like notes and 
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="abL-Jm-kfq" rowHeight="222" style="IBUITableViewCellStyleDefault" id="aHQ-uk-91o">
-                                        <rect key="frame" x="0.0" y="1022" width="320" height="222"/>
+                                        <rect key="frame" x="0.0" y="958" width="320" height="222"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aHQ-uk-91o" id="ftg-eJ-8ur">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="221"/>
@@ -467,7 +467,7 @@ Our natural-processed Ethiopian Yirgacheffe coffee is bursting with wild and swe
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="HkF-cU-fLQ" rowHeight="168" style="IBUITableViewCellStyleDefault" id="cf3-We-7Gp">
-                                        <rect key="frame" x="0.0" y="1244" width="320" height="168"/>
+                                        <rect key="frame" x="0.0" y="1180" width="320" height="168"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cf3-We-7Gp" id="3Yb-eF-sqh">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
@@ -486,7 +486,7 @@ Grown by old traditional methods to ensure quality, this fine Guatemalan coffee 
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ztR-02-U83" rowHeight="157" style="IBUITableViewCellStyleDefault" id="YKn-ix-hpK">
-                                        <rect key="frame" x="0.0" y="1412" width="320" height="157"/>
+                                        <rect key="frame" x="0.0" y="1348" width="320" height="157"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YKn-ix-hpK" id="t7g-d3-xv0">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
@@ -505,7 +505,7 @@ Exotic, smooth body, complex with notes of fruit, bittersweet chocolate and cara
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="WJy-MW-abv" rowHeight="217" style="IBUITableViewCellStyleDefault" id="LM1-My-MkC">
-                                        <rect key="frame" x="0.0" y="1569" width="320" height="217"/>
+                                        <rect key="frame" x="0.0" y="1505" width="320" height="217"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LM1-My-MkC" id="dB2-Kh-Bwn">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
@@ -524,7 +524,7 @@ Our Honduran coffee is a single-estate, micro-lot coffee produced by Victor Vent
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="CvW-Fe-Ua0" rowHeight="229" style="IBUITableViewCellStyleDefault" id="0Sr-W0-yHp">
-                                        <rect key="frame" x="0.0" y="1786" width="320" height="229"/>
+                                        <rect key="frame" x="0.0" y="1722" width="320" height="229"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Sr-W0-yHp" id="0Zt-Hc-q3S">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="228"/>
@@ -543,7 +543,7 @@ The Kenya Kiunya brewed cup is very refined and well-balanced. The aroma shows c
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="JdZ-TV-XFk" rowHeight="171" style="IBUITableViewCellStyleDefault" id="G2D-Vp-nyN">
-                                        <rect key="frame" x="0.0" y="2015" width="320" height="171"/>
+                                        <rect key="frame" x="0.0" y="1951" width="320" height="171"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G2D-Vp-nyN" id="RG4-9K-s2O">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
@@ -562,7 +562,7 @@ Our Mexican Oaxaca CEPCO is a Certified Organic and Fair Trade coffee -- silky s
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="FVY-ex-2Md" rowHeight="136" style="IBUITableViewCellStyleDefault" id="J1R-03-Zwm">
-                                        <rect key="frame" x="0.0" y="2186" width="320" height="136"/>
+                                        <rect key="frame" x="0.0" y="2122" width="320" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J1R-03-Zwm" id="dEo-Z8-4KQ">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
@@ -581,7 +581,7 @@ The Nicaragua Jinotega has a clear, clean focused cup with medium body and a flo
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="kRG-mO-5S5" rowHeight="206" style="IBUITableViewCellStyleDefault" id="cSR-zE-aLf">
-                                        <rect key="frame" x="0.0" y="2322" width="320" height="206"/>
+                                        <rect key="frame" x="0.0" y="2258" width="320" height="206"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cSR-zE-aLf" id="mti-UX-5kb">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="205"/>
@@ -600,7 +600,7 @@ Our Panama Chiriquí Berlina Estate shows fruit, chocolate, caramel and spice in
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="RiO-ea-Mwk" rowHeight="259" style="IBUITableViewCellStyleDefault" id="ISH-am-VRv">
-                                        <rect key="frame" x="0.0" y="2528" width="320" height="259"/>
+                                        <rect key="frame" x="0.0" y="2464" width="320" height="259"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ISH-am-VRv" id="CQ8-nS-PT8">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
@@ -619,7 +619,7 @@ Good balance with hints of citrus up front, excellent body, and a smooth creamy 
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="hjV-86-INt" rowHeight="156" style="IBUITableViewCellStyleDefault" id="uZh-Ya-iMX">
-                                        <rect key="frame" x="0.0" y="2787" width="320" height="156"/>
+                                        <rect key="frame" x="0.0" y="2723" width="320" height="156"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uZh-Ya-iMX" id="PkL-vz-n5B">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
@@ -638,7 +638,7 @@ Our Sumatra Ketiara has a magnificent heavy body with an earthy quality. Its cha
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="KNx-3V-CYJ" rowHeight="137" style="IBUITableViewCellStyleDefault" id="53z-mg-srV">
-                                        <rect key="frame" x="0.0" y="2943" width="320" height="137"/>
+                                        <rect key="frame" x="0.0" y="2879" width="320" height="137"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="53z-mg-srV" id="XPx-5H-V70">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
@@ -693,7 +693,7 @@ Good body, lively bright flavor with citrus notes and a pleasant slightly floral
                             <tableViewSection id="c9b-9x-oqs">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="10" textLabel="FzU-mo-da0" rowHeight="142" style="IBUITableViewCellStyleDefault" id="Oks-bQ-t5y">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="142"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oks-bQ-t5y" id="Yb8-0y-fiu">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="141"/>
@@ -712,7 +712,7 @@ Soft, rich, dark flavor; smooth and complex. We blend excellent grades of South 
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="lgl-QC-Knf" rowHeight="125" style="IBUITableViewCellStyleDefault" id="joL-Wz-6Ms">
-                                        <rect key="frame" x="0.0" y="206" width="320" height="125"/>
+                                        <rect key="frame" x="0.0" y="142" width="320" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="joL-Wz-6Ms" id="2Mw-3U-Yef">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
@@ -731,7 +731,7 @@ Our darkest roast. Very intense, ebony coffee with pronounced smoky overtones. I
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pTd-hU-dh3" rowHeight="144" style="IBUITableViewCellStyleDefault" id="Nw2-Tx-1RW">
-                                        <rect key="frame" x="0.0" y="331" width="320" height="144"/>
+                                        <rect key="frame" x="0.0" y="267" width="320" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nw2-Tx-1RW" id="NYS-U5-Aqm">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
@@ -892,7 +892,7 @@ Rich, full-bodied, complex, with dark chocolate nuances. This roast is slightly 
                             <tableViewSection id="T9B-RL-fga">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="yXU-8F-kVp" rowHeight="193" style="IBUITableViewCellStyleDefault" id="GbM-cU-jUq">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="193"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="193"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GbM-cU-jUq" id="URo-sN-hNy">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
@@ -912,7 +912,7 @@ Hearty and rich, a decaffeinated version of our Breakfast Blend. This full-bodie
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="xib-3a-8Uc" rowHeight="158" style="IBUITableViewCellStyleDefault" id="wTf-7J-nKr">
-                                        <rect key="frame" x="0.0" y="257" width="320" height="158"/>
+                                        <rect key="frame" x="0.0" y="193" width="320" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTf-7J-nKr" id="c6h-vN-E3U">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
@@ -932,7 +932,7 @@ Mild, smooth flavor with medium-body. Coffee beans are decaffeinated prior to ro
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pvA-dg-eTw" rowHeight="155" style="IBUITableViewCellStyleDefault" id="BU5-Vv-rWn">
-                                        <rect key="frame" x="0.0" y="415" width="320" height="155"/>
+                                        <rect key="frame" x="0.0" y="351" width="320" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BU5-Vv-rWn" id="ONX-cM-AXw">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="154"/>
@@ -952,7 +952,7 @@ Pungent aroma, tangy flavor, medium-body. Our Decaffeinated Ethiopian is from th
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="OJu-9w-dtf" rowHeight="179" style="IBUITableViewCellStyleDefault" id="jle-wP-IhL">
-                                        <rect key="frame" x="0.0" y="570" width="320" height="179"/>
+                                        <rect key="frame" x="0.0" y="506" width="320" height="179"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jle-wP-IhL" id="I0d-28-epT">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
@@ -972,7 +972,7 @@ Dark, smoky flavor, full body without the caffeine. High quality African and Ind
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="0.0" id="X0U-P5-Vra">
-                                        <rect key="frame" x="0.0" y="749" width="320" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="685" width="320" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X0U-P5-Vra" id="ChB-aO-mKe">
                                             <rect key="frame" x="0.0" y="-1" width="320" height="1"/>
@@ -980,7 +980,7 @@ Dark, smoky flavor, full body without the caffeine. High quality African and Ind
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="BXN-7e-ocl" rowHeight="195" style="IBUITableViewCellStyleDefault" id="wxb-rn-d4J">
-                                        <rect key="frame" x="0.0" y="749" width="320" height="195"/>
+                                        <rect key="frame" x="0.0" y="685" width="320" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wxb-rn-d4J" id="zZ8-de-kHD">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
@@ -1000,7 +1000,7 @@ A Decaffeinated version of our popular German Blend. Inspired by the traditional
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Udw-8k-tcL" rowHeight="241" style="IBUITableViewCellStyleDefault" id="GSg-ck-2VW">
-                                        <rect key="frame" x="0.0" y="944" width="320" height="241"/>
+                                        <rect key="frame" x="0.0" y="880" width="320" height="241"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GSg-ck-2VW" id="Yb6-hp-N8E">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
@@ -1020,7 +1020,7 @@ Smooth and complex, a decaffeinated version of our Kaffeeklatsch House Blend. Th
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="t46-3p-5i5" rowHeight="176" style="IBUITableViewCellStyleDefault" id="xHW-0W-0D9">
-                                        <rect key="frame" x="0.0" y="1185" width="320" height="176"/>
+                                        <rect key="frame" x="0.0" y="1121" width="320" height="176"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xHW-0W-0D9" id="qMs-ZL-x7H">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
@@ -1040,7 +1040,7 @@ Blend of Decaf Ethiopian and Decaf Sumatra Mandheling, complex and full-bodied. 
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="of2-CO-TyS" rowHeight="180" style="IBUITableViewCellStyleDefault" id="WIS-7J-5Cd">
-                                        <rect key="frame" x="0.0" y="1361" width="320" height="180"/>
+                                        <rect key="frame" x="0.0" y="1297" width="320" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WIS-7J-5Cd" id="avF-br-wqB">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
@@ -1060,7 +1060,7 @@ Mild flavor, good acidity, excellent body. Grown high in the Andean mountains at
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="LXh-MN-xij" rowHeight="161" style="IBUITableViewCellStyleDefault" id="MnM-va-8qQ">
-                                        <rect key="frame" x="0.0" y="1541" width="320" height="161"/>
+                                        <rect key="frame" x="0.0" y="1477" width="320" height="161"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MnM-va-8qQ" id="eWQ-xk-P6r">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
@@ -1080,7 +1080,7 @@ True coffee flavor, full body and rich flavor. Sumatra Mandheling’s flavors ar
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="EnK-1d-dKE">
-                                        <rect key="frame" x="0.0" y="1702" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="1638" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EnK-1d-dKE" id="6H5-Fc-aRP">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -1142,7 +1142,7 @@ True coffee flavor, full body and rich flavor. Sumatra Mandheling’s flavors ar
                             <tableViewSection id="nr0-vj-Aw2">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="dVt-o1-Ji5" rowHeight="211" style="IBUITableViewCellStyleDefault" id="8CX-R7-JIg">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="211"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8CX-R7-JIg" id="1Oi-Fb-t6b">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
@@ -1162,7 +1162,7 @@ Our blend of Colombian Supremo and French Roast is smooth and rich with great de
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="29X-63-eEo" rowHeight="193" style="IBUITableViewCellStyleDefault" id="BPA-bs-b52">
-                                        <rect key="frame" x="0.0" y="275" width="320" height="193"/>
+                                        <rect key="frame" x="0.0" y="211" width="320" height="193"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BPA-bs-b52" id="Fdu-Gm-9da">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
@@ -1182,7 +1182,7 @@ Hawaiian Kona, Celebes Kalossi and Ethiopian Harrar combine for exquisite aroma,
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="JZQ-oa-8Sb" rowHeight="176" style="IBUITableViewCellStyleDefault" id="MM3-29-1oS">
-                                        <rect key="frame" x="0.0" y="468" width="320" height="176"/>
+                                        <rect key="frame" x="0.0" y="404" width="320" height="176"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MM3-29-1oS" id="MCc-k9-FRW">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
@@ -1202,7 +1202,7 @@ Guatemalan Antigua, Colombia Supremo and Plantation Kenya AA, smooth and rich wi
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="kKX-Wk-R4K" rowHeight="99" style="IBUITableViewCellStyleDefault" id="m09-4E-xIN">
-                                        <rect key="frame" x="0.0" y="644" width="320" height="99"/>
+                                        <rect key="frame" x="0.0" y="580" width="320" height="99"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m09-4E-xIN" id="YgJ-iW-29v">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
@@ -1222,7 +1222,7 @@ Delightfully creamy and smooth, hint of sweetness
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="dQa-d1-WT7" rowHeight="160" style="IBUITableViewCellStyleDefault" id="fVd-EU-Grb">
-                                        <rect key="frame" x="0.0" y="743" width="320" height="160"/>
+                                        <rect key="frame" x="0.0" y="679" width="320" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fVd-EU-Grb" id="fJt-yE-zTk">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
@@ -1242,7 +1242,7 @@ Our fabulous blend of a South and Central American has fruity aroma, caramel-lik
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="g5c-YQ-NEv" rowHeight="159" style="IBUITableViewCellStyleDefault" id="NkJ-9e-z3q">
-                                        <rect key="frame" x="0.0" y="903" width="320" height="159"/>
+                                        <rect key="frame" x="0.0" y="839" width="320" height="159"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NkJ-9e-z3q" id="N1P-0C-91H">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
@@ -1262,7 +1262,7 @@ Medium-bodied, well balanced, pleasant flavor. The lively, complex flavors of Ce
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="xlc-hp-H3Y" rowHeight="122" style="IBUITableViewCellStyleDefault" id="pFG-93-TKs">
-                                        <rect key="frame" x="0.0" y="1062" width="320" height="122"/>
+                                        <rect key="frame" x="0.0" y="998" width="320" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pFG-93-TKs" id="NgI-6I-VKk">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
@@ -1282,7 +1282,7 @@ The world’s oldest and most famous blend, rich, full-bodied, striking flavor.
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="7pq-MK-Nqy" rowHeight="151" style="IBUITableViewCellStyleDefault" id="BpQ-Hh-VWW">
-                                        <rect key="frame" x="0.0" y="1184" width="320" height="151"/>
+                                        <rect key="frame" x="0.0" y="1120" width="320" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BpQ-Hh-VWW" id="cIn-DC-24F">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
